@@ -1,0 +1,32 @@
+import java.util.*;
+class arrseclar
+{
+	public static void main(String args[])
+	{
+		int lar,seclar,i;
+		System.out.print("Enter the number of element");
+		Scanner add=new Scanner(System.in);
+		int n=add.nextInt();
+		System.out.print("Enter the element");
+		int arr[]= new int[n];
+		for(i=0;i<n;i++)
+		arr[i]=add.nextInt();
+		lar=arr[0];
+		seclar=arr[1];
+		for(i=0;i<n;i++)
+		{
+			if(lar<arr[i])
+			{
+				lar=arr[i];
+			}
+		}
+		for(i=0;i<n;i++)
+		{
+			if(seclar<arr[i] && arr[i]!=lar)
+			{
+				seclar=arr[i];
+			}
+		}
+		System.out.print("the second largest number in array is"+seclar);
+	}
+}
