@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class factorial
+{
+	public static void main(String args[])
+	{
+		int i,c=1,n;
+		System.out.print("Enter the element");
+		Scanner add=new Scanner(System.in);
+		n=add.nextInt();
+		
+		for(i=1;i<=n;i++)
+		{
+			c=c*i;
+		}
+		System.out.print(+c);
+	}
+}
