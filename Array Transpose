@@ -1,0 +1,30 @@
+import java.util.*;
+class arraytranspose
+{
+	public static void main(String args[])
+	{
+		int j,i;
+		System.out.print("Enter the number of row and column of the array");
+		Scanner add=new Scanner(System.in);
+		int r1=add.nextInt();
+		int c1=add.nextInt();
+		System.out.print("Enter the element of array");
+		int a1[][]= new int[r1][c1];
+		for(i=0;i<r1;i++)
+		{
+			for(j=0;j<c1;j++)
+			{	
+				a1[i][j]=add.nextInt();
+			}
+		}
+		System.out.println("The transpose of the array");
+		for(i=0;i<c1;i++)
+		{
+			for(j=0;j<r1;j++)
+			{	
+				System.out.print(a1[j][i]+"\t");
+			}
+			System.out.print("\n");
+		}
+	}
+}
