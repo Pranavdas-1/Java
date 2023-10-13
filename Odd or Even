@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class oddeven
+{
+	public static void main(String args[])
+	{
+		int n;
+		System.out.print("Enter the number");
+		Scanner add=new Scanner(System.in);
+		n=add.nextInt();
+		if(n%2==0)
+		{
+			System.out.print("The number"+n+ "is even");
+		}
+		else
+		{
+			System.out.print("The number"+n+ " is odd");
+		}
+	}
+}
