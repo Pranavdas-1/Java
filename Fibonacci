@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class fibo1
+{
+	public static void main(String args[])
+	{
+		int a=-1,b=1,i,c,n;
+		System.out.print("Enter number of element");
+		Scanner add=new Scanner(System.in);
+		n=add.nextInt();
+		
+		for(i=0;i<n;i++)
+		{
+			c=a+b;
+			System.out.print("\t"+c);
+			a=b;
+			b=c;
+		}
+	}
+}
