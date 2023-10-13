@@ -1,0 +1,24 @@
+import java.util.*;
+class arrsmal
+{
+	public static void main(String args[])
+	{
+		int small,i;
+		System.out.print("Enter the number of element");
+		Scanner add=new Scanner(System.in);
+		int n=add.nextInt();
+		System.out.print("Enter the element");
+		int arr[]= new int[n];
+		for(i=0;i<n;i++)
+		arr[i]=add.nextInt();
+		small=arr[0];
+		for(i=0;i<n;i++)
+		{
+			if(small>arr[i])
+			{
+				small=arr[i];
+			}
+		}
+		System.out.print("the smallest number in array is"+small);
+	}
+}
