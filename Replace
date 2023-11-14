@@ -1,0 +1,29 @@
+import java.util.*;
+class arrreplace
+{
+	public static void main(String args[])
+	{
+		int i;
+		System.out.print("Enter the number of element");
+		Scanner add=new Scanner(System.in);
+		int n=add.nextInt();
+		System.out.print("Enter the element");
+		int arr[]= new int[n];
+		for(i=0;i<n;i++)
+		arr[i]=add.nextInt();
+		System.out.print("Enter the element to be replaced");
+		int r=add.nextInt();
+		System.out.print("Enter the element to which it is to be replaced");
+		int m=add.nextInt();
+		for(i=0;i<n;i++)
+		{
+			if(arr[i]==r)
+			{
+				arr[i]=m;
+			}
+		}
+		System.out.println("NEW ARRAY IS");
+		for(i=0;i<n;i++)
+		System.out.print(arr[i]+"\t");
+	}
+}
