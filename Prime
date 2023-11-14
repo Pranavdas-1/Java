@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class prim1
+{
+	public static void main(String args[])
+	{
+		int n,i,flag=0;
+		System.out.print("Enter the number");
+		Scanner add=new Scanner(System.in);
+		n=add.nextInt();
+		for(i=2;i<n;i++)
+		{
+			if(n%i==0)
+			{
+				flag=1;
+			}
+		}
+		if(flag==0)
+		{
+			System.out.print("The number"+n+ "is prime");
+		}
+		else
+		{
+			System.out.print("The number"+n+ " is not prime");
+		}
+	}
+}
