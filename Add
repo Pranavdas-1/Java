@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class add
+{
+	public static void main(String args[])
+	{
+		int n,b;
+		System.out.print("Enter first element");
+		Scanner add=new Scanner(System.in);
+		n=add.nextInt();
+		System.out.print("Enter second element");
+		b=add.nextInt();
+		System.out.println("sum of "+n+" and "+b+" is "+(n+b));
+	}
+}
